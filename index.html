@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="media/logo.png" class="logo" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Special song</a></li>
+                    <li><a href="#">product</a></li>
+                    <li><a href="#">connect</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE <br> REAL <br> SOUND </h1>
+
+            </div>
+            <div class="right-col">
+                <p>Click here to listen</p>
+                <img src="media/play.png" id="play" alt="">
+
+            </div>
+
+        </div>
+    </div>
+    <audio src="media/Saat Samundar - Reprise Version __ slowed _ reverbed(Djmonumkg.com).mp3" id="song" ></audio>
+    <script>
+        var mySong=document.getElementById("song");
+        var playSong=document.getElementById("play");
+        play.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+                play.src="media/pause.png";
+
+            }
+            else{
+                mySong.pause();
+                play.src="media/play.png";
+
+            }
+
+
+        }
+    </script>
+</body>
+</html>
